@@ -1,0 +1,25 @@
+.items {
+  & .lists {
+    &__img {
+      height: 220px;
+    }
+  }
+}
+
+.header {
+  & > h1 {
+    white-space: nowrap;
+  }
+}
+
+#contact {
+  & .contact__inner {
+    & > a {
+      padding: 20px 0;
+    }
+  }
+}
+
+.footer {
+  font-size: 12px;
+}

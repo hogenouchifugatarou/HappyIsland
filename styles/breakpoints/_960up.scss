@@ -1,0 +1,98 @@
+.menu {
+  max-width: 400px;
+}
+
+.header {
+  & > h1 {
+    font-size: 50px;
+  }
+}
+
+#vision {
+
+  & .inline {
+
+    & > h2 {
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    
+    &__ruby {
+      font-size: 24px;
+      margin-bottom: 100px;
+    }
+
+    &__text {
+      font-size: 39px;
+
+      & > strong {
+        font-size: 37px;
+      }
+    }
+  }
+}
+
+.items {
+  flex-direction: row;
+
+  & > .inline {
+    font-size: 21px;
+    flex-basis: 24%;
+  }
+
+  & .lists {
+    flex-direction: row;
+    flex-basis: 76%;
+
+    & > figure {
+      flex-basis: 48%;
+    }
+
+    &__img {
+      height: 180px;
+    }
+  }
+}
+
+#contact {
+
+  & .contact__inner {
+    & > a {
+      padding: 50px 0;
+    }
+  }
+}
+
+.footer {
+  font-size: 18px;
+  height: 200px;
+
+  &__inline {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+  }
+
+  &__logo {
+    flex-direction: column;
+
+    & .logo {
+      & > img {
+        width: 30px;
+        height: 30px;
+      }
+
+      & > span {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &__address {
+    flex-basis: 45%;
+    align-items: flex-start;
+  }
+
+
+}
+

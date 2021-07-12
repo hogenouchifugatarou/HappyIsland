@@ -1,0 +1,7 @@
+.items {
+    & .lists {
+        &__img {
+            height: 250px;
+        }
+    }
+}

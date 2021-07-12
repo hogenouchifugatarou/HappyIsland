@@ -1,0 +1,35 @@
+.header {
+  & > h1 {
+    font-size: 40px;
+  }
+}
+
+#vision {
+
+  & .inline {
+
+    & > h2 {
+      font-size: 30px;
+    }
+    
+    &__ruby {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 28px;
+
+      & > strong {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.items {
+  & .lists {
+    &__img {
+      height: 270px;
+    }
+  }
+}
