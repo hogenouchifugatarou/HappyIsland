@@ -1,9 +1,8 @@
-// $(function(){
-//   $('.typeanime').t('HappyIsland',{
-//     delay: 1.5,
-//     speed: 150,
-//     mistype: 15,
-//   }
-//   );
-//   alert('type');
-// });
+$(function(){
+  $('.typeanime').t('HappyIsland',{
+    delay: 1.5,
+    speed: 150,
+    mistype: 15,
+  }
+  );
+});
