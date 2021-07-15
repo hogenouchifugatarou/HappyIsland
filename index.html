@@ -7,160 +7,164 @@
     <title>Project:&emsp;HappyIsland</title>
     <meta name="description" content="ポートフォリオ。僕を紹介するサイト">
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="styles/loader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radley&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="Background">
-        <video id="Background__player0" class="Background__player" src="images/movie0.mp4" muted>
-            <source type="video/mp4" src="images/movie0.mp4">
-        </video>
-        <video id="Background__player1" class="Background__player" src="images/movie1.mp4" muted>
-            <source type="video/mp4" src="images/movie1.mp4">
-        </video>
-        <video id="Background__player2" class="Background__player" src="images/movie2.mp4" muted>
-            <source type="video/mp4" src="images/movie2.mp4">
-        </video>
-        <video id="Background__player3" class="Background__player" src="images/movie3.mp4" muted>
-            <source type="video/mp4" src="images/movie3.mp4">
-        </video>
-        <video id="Background__player4" class="Background__player" src="images/movie4.mp4" muted>
-            <source type="video/mp4" src="images/movie4.mp4">
-        </video>
-        <video id="Background__player5" class="Background__player" src="images/movie5.mp4" muted>
-            <source type="video/mp5" src="images/movie5.mp4">
-        </video>
-        <video id="Background__player6" class="Background__player" src="images/movie6.mp4" muted>
-            <source type="video/mp5" src="images/movie6.mp4">
-        </video>
-        <video id="Background__player7" class="Background__player" src="images/movie7.mp4" muted>
-            <source type="video/mp5" src="images/movie7.mp4">
-        </video>
-        <video id="Background__player8" class="Background__player" src="images/movie8.mp4" muted>
-            <source type="video/mp5" src="images/movie8.mp4">
-        </video>
-        <video id="Background__player9" class="Background__player" src="images/movie9.mp4" muted>
-            <source type="video/mp5" src="images/movie9.mp4">
-        </video>
-        <video id="Background__player10" class="Background__player" src="images/movie10.mp4" muted>
-            <source type="video/mp5" src="images/movie10.mp4">
-        </video>
-        <video id="Background__player11" class="Background__player" src="images/movie11.mp4" muted>
-            <source type="video/mp5" src="images/movie11.mp4">
-        </video>
-        <video id="Background__player12" class="Background__player" src="images/movie12.mp4" muted>
-            <source type="video/mp5" src="images/movie12.mp4">
-        </video>
-    </div>
-    
-    <div class="container">
 
-        <header class="header">
-            <h1>Project:&emsp;<span class="typeanime"></span></h1>
-            <a class="scroll" href="#"><span class="scroll__icon"></span>Scroll</a>
-        </header>
+    <div id="global-container">
 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="Background">
+            <video id="Background__player0" class="Background__player" src="images/movie0.mp4" muted>
+                <source type="video/mp4" src="images/movie0.mp4">
+            </video>
+            <video id="Background__player1" class="Background__player" src="images/movie1.mp4" muted>
+                <source type="video/mp4" src="images/movie1.mp4">
+            </video>
+            <video id="Background__player2" class="Background__player" src="images/movie2.mp4" muted>
+                <source type="video/mp4" src="images/movie2.mp4">
+            </video>
+            <video id="Background__player3" class="Background__player" src="images/movie3.mp4" muted>
+                <source type="video/mp4" src="images/movie3.mp4">
+            </video>
+            <video id="Background__player4" class="Background__player" src="images/movie4.mp4" muted>
+                <source type="video/mp4" src="images/movie4.mp4">
+            </video>
+            <video id="Background__player5" class="Background__player" src="images/movie5.mp4" muted>
+                <source type="video/mp5" src="images/movie5.mp4">
+            </video>
+            <video id="Background__player6" class="Background__player" src="images/movie6.mp4" muted>
+                <source type="video/mp5" src="images/movie6.mp4">
+            </video>
+            <video id="Background__player7" class="Background__player" src="images/movie7.mp4" muted>
+                <source type="video/mp5" src="images/movie7.mp4">
+            </video>
+            <video id="Background__player8" class="Background__player" src="images/movie8.mp4" muted>
+                <source type="video/mp5" src="images/movie8.mp4">
+            </video>
+            <video id="Background__player9" class="Background__player" src="images/movie9.mp4" muted>
+                <source type="video/mp5" src="images/movie9.mp4">
+            </video>
+            <video id="Background__player10" class="Background__player" src="images/movie10.mp4" muted>
+                <source type="video/mp5" src="images/movie10.mp4">
+            </video>
+            <video id="Background__player11" class="Background__player" src="images/movie11.mp4" muted>
+                <source type="video/mp5" src="images/movie11.mp4">
+            </video>
+            <video id="Background__player12" class="Background__player" src="images/movie12.mp4" muted>
+                <source type="video/mp5" src="images/movie12.mp4">
+            </video>
         </div>
-
-        <nav class="menu">
-            <div class="menu__list">
-                <div class="menu__item">
-                    <a class="menu__link" href="">TOP</a>
-                </div>
-                <div class="menu__item">
-                    <a class="menu__link" href="">Works</a>
-                </div>
-                <div class="menu__item">
-                    <a class="menu__link" href="">Company</a>
-                </div>
-                <div class="menu__item">
-                    <a class="menu__link" href="">Member</a>
-                </div>
-                <div class="menu__item">
-                    <a class="menu__link" href="">Contact</a>
-                </div>
+        
+        <div class="container">
+            
+            <header class="header">
+                <h1>Project:&emsp;<span class="typeanime"></span></h1>
+                <a class="scroll" href="#"><span class="scroll__icon"></span>Scroll</a>
+            </header>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-        <div class="content">
-            <article id="main" >
-                <section id="vision">
-                    <div id="current" class="inline">
-                        <h2>Current status:</h2>
-                        <p class="inline__ruby">島の現状</p>
-                        <p class="inline__text">
-                            <strong>昔ながらの</strong>
-                            <em class="point">
-                                経年劣化した建物
-                            </em>
-                            <strong>。過去の歴史と化した、かつては</strong>
-                            <em class="point">
-                                栄えた街並み
-                            </em>
-                            <strong>。野放しになっている</strong>
-                            <em class="point">
-                                野生動物
-                            </em>
-                            <strong>
-                                。日本国土より、約365km離れた場所に某島は存在する。
-                                かつては地上の楽園と言われた島も、今は見る影もない。
-                            </strong>
-                            <em class="point">
-                                死地
-                            </em>
-                            <strong>
-                                と化したこの島を救うには
-                            </strong>
-                            <em class="point">
-                                同じ理念を持つ仲間
-                            </em>
-                            <strong>
-                                と
-                            </strong>
-                            <em class="point">
-                                多くのアイデア
-                            </em>
-                            <strong>
-                                が必要だ。
-                            </strong>
-                        </p>
+            
+            <nav class="menu">
+                <div class="menu__list">
+                    <div class="menu__item">
+                        <a class="menu__link" href="">TOP</a>
                     </div>
-
-                    <div id="lookfor" class="inline">
-                        <h2>Things necessary:</h2>
-                        <p class="inline__ruby">島に求めるもの</p>
-                        <p class="inline__text">
-                            <em class="point">
-                                1.自然豊かな環境づくり
-                            </em>
-                            <strong>
-                                &emsp;人がリラックスして過ごし、のんびりと時の流れが緩やかになるように
-                            </strong>
-                            <em class="point">
-                                2.道中を含む整備された環境
-                            </em>
-                            <strong>
-                                &emsp;誰でもすぐにいける窓口、交通の便を増やし、リーズナブルな価格でのスパリゾートを提供を目指せるように。
-                            </strong>
-                            <em class="point">
-                                3.弾けるような遊び場を
-                            </em>
-                            <strong>
-                                &emsp;楽しさで溢れる空間へ。いたるところで笑顔になれるアイデアを、心のすべてを解放できるように
-                            </strong>
-                        </p>
+                    <div class="menu__item">
+                        <a class="menu__link" href="">Works</a>
                     </div>
-
-                    <div id="human" class="inline">
-                        <h2>Human resources:</h2>
+                    <div class="menu__item">
+                        <a class="menu__link" href="">Company</a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="">Member</a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <article id="main" >
+                    <section id="vision">
+                        <div id="current" class="inline">
+                            <h2>Current status:</h2>
+                            <p class="inline__ruby">島の現状</p>
+                            <p class="inline__text">
+                                <strong>昔ながらの</strong>
+                                <em class="point">
+                                    経年劣化した建物
+                                </em>
+                                <strong>。過去の歴史と化した、かつては</strong>
+                                <em class="point">
+                                    栄えた街並み
+                                </em>
+                                <strong>。野放しになっている</strong>
+                                <em class="point">
+                                    野生動物
+                                </em>
+                                <strong>
+                                    。日本国土より、約365km離れた場所に某島は存在する。
+                                    かつては地上の楽園と言われた島も、今は見る影もない。
+                                </strong>
+                                <em class="point">
+                                    死地
+                                </em>
+                                <strong>
+                                    と化したこの島を救うには
+                                </strong>
+                                <em class="point">
+                                    同じ理念を持つ仲間
+                                </em>
+                                <strong>
+                                    と
+                                </strong>
+                                <em class="point">
+                                    多くのアイデア
+                                </em>
+                                <strong>
+                                    が必要だ。
+                                </strong>
+                            </p>
+                        </div>
+                        
+                        <div id="lookfor" class="inline">
+                            <h2>Things necessary:</h2>
+                            <p class="inline__ruby">島に求めるもの</p>
+                            <p class="inline__text">
+                                <em class="point">
+                                    1.自然豊かな環境づくり
+                                </em>
+                                <strong>
+                                    &emsp;人がリラックスして過ごし、のんびりと時の流れが緩やかになるように
+                                </strong>
+                                <em class="point">
+                                    2.道中を含む整備された環境
+                                </em>
+                                <strong>
+                                    &emsp;誰でもすぐにいける窓口、交通の便を増やし、リーズナブルな価格でのスパリゾートを提供を目指せるように。
+                                </strong>
+                                <em class="point">
+                                    3.弾けるような遊び場を
+                                </em>
+                                <strong>
+                                    &emsp;楽しさで溢れる空間へ。いたるところで笑顔になれるアイデアを、心のすべてを解放できるように
+                                </strong>
+                            </p>
+                        </div>
+                        
+                        <div id="human" class="inline">
+                            <h2>Human resources:</h2>
                         <p class="inline__ruby">必要な人材</p>
                         <p class="inline__text">
                             <strong>
@@ -313,72 +317,72 @@
                                 </figcaption>
                                 <p class="lists__text">
                                     【カエル】副会長。生真面目な性格。ウサギの思いつきに振り回され、いつもボヤいている。                              </p>
-                            </a>
-                        </figure>
-                    </div>
-                </section>
-                <section id="contact">
-                    <div class="contact__inner">
-                        <a href="">&gt;Contact</a>
-                    </div>
-                </section>
-            </article>
-
-        </div>
-        <footer id="footer" class="footer">
-            <div class="footer__inline">
-                <div class="footer__logo">
-                    <div class="logo">
-                        <img src="images/icon.png" alt="">
-                        <span>HappyIsland</span>
-                    </div>
-                    <div class="copyright">
-                        &copy; Kawachi Takahiro
-                    </div>
-                </div>
-                <div class="footer__address">
-                    <div class="osaka introduction">
-                        <span>OSAKA</span>
-                        <div class="post">
-                            〒XXX-XXXX
+                                </a>
+                            </figure>
                         </div>
-                        <div class="tel">
-                            TEL:XXX-XXXX-XXXX
+                    </section>
+                    <section id="contact">
+                        <div class="contact__inner">
+                            <a href="">&gt;Contact</a>
                         </div>
-                        <div class="fax">
-                            FAX:XX-XXXX-XXXX
-                        </div>
-                    </div>
-                    <div class="tokyo introduction">
-                        <span>TOKYO</span>
-                        <div class="post">
-                            〒XXX-XXXX
-                        </div>
-                        <div class="tel">
-                            TEL:XXX-XXXX-XXXX
-                        </div>
-                        <div class="fax">
-                            FAX:XX-XXXX-XXXX
-                        </div>
-                    </div>
-                    <div class="sns introduction">
-                        <div class="facebook">
-                            &gt;FaceBook
-                        </div>
-                        <div class="twitter">
-                            &gt;Twitter
-                        </div>
-                        <div class="instagram">
-                            &gt;Instagram
-                        </div>
-                    </div>
-                </div>
+                    </section>
+                </article>
+                
             </div>
-        </footer>
-    </div>
+            <footer id="footer" class="footer">
+                <div class="footer__inline">
+                    <div class="footer__logo">
+                        <div class="logo">
+                            <img src="images/icon.png" alt="">
+                            <span>HappyIsland</span>
+                        </div>
+                        <div class="copyright">
+                            &copy; Kawachi Takahiro
+                        </div>
+                    </div>
+                    <div class="footer__address">
+                        <div class="osaka introduction">
+                            <span>OSAKA</span>
+                            <div class="post">
+                                〒XXX-XXXX
+                            </div>
+                            <div class="tel">
+                                TEL:XXX-XXXX-XXXX
+                            </div>
+                            <div class="fax">
+                                FAX:XX-XXXX-XXXX
+                            </div>
+                        </div>
+                        <div class="tokyo introduction">
+                            <span>TOKYO</span>
+                            <div class="post">
+                                〒XXX-XXXX
+                            </div>
+                            <div class="tel">
+                                TEL:XXX-XXXX-XXXX
+                            </div>
+                            <div class="fax">
+                                FAX:XX-XXXX-XXXX
+                            </div>
+                        </div>
+                        <div class="sns introduction">
+                            <div class="facebook">
+                                &gt;FaceBook
+                            </div>
+                            <div class="twitter">
+                                &gt;Twitter
+                            </div>
+                            <div class="instagram">
+                                &gt;Instagram
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
-    <script src="scripts/libs/backmovie.js"></script>
-    <script src="scripts/libs/typeanime.js"></script>
-    <script src="scripts/libs/menu.js"></script>
-</body>
+    </div>
+    <script src="scripts/vendors/t.min.js"></script>
+    <script src="scripts/main.js"></script>
+    </body>
 </html>

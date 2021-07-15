@@ -1,11 +1,13 @@
-$(function() {
-    $('.hamburger').click(function() {
-        $(this).toggleClass('active');
- 
-        if ($(this).hasClass('active')) {
-            $('.menu').addClass('active');
-        } else {
-            $('.menu').removeClass('active');
-        }
-    });
-});
+
+// $(function() {
+//     $('.hamburger').click(function() {
+//         $(this).toggleClass('active');
+    
+//         if ($(this).hasClass('active')) {
+//             $('.menu').addClass('active');
+//         } else {
+//             $('.menu').removeClass('active');
+//         }
+//     });
+//     alert('menu');
+// });
