@@ -9,8 +9,8 @@
     width: 50%;
     height: 100%;
     opacity: 0;
-    transition: opacity .6s ease, visibility .6s ease;
-
+    transform: translateX(100%);
+    transition: transform 0.3s;
     &__list {
         height: 100%;
         display: flex;
@@ -21,6 +21,9 @@
 
     &__item {
         width: 100%;
+        transform: translateX(100%);
+        opacity: 0;
+
     }
 
     &__link {
@@ -38,10 +41,38 @@
     &.active {
         opacity: 1;
         z-index: 2;
+        transform: none;
+
+        & .menu__item {
+            @for $cnt from 1 through 5 {
+                &:nth-child(#{$cnt}) {
+                    @include animation(
+                        $name: order,
+                        $duration: 0.15s,
+                        $timing-function: ease-out,
+                        $delay: $cnt * 0.09s,
+                    );
+                }
+            }
+        }
     }
 
-
 }
+
+@keyframes order {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
 
 .hamburger {
     display: block;
